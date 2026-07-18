@@ -1,0 +1,48 @@
+:root {
+  --bg: #05080F;
+  --card: #090E1A;
+  --border: #1B2232;
+  --fg: #F0F1F5;
+  --muted: #7B879D;
+  --amber: #FA9F38;
+  --accent: #22C3C3;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui, sans-serif;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+header.site { padding: 28px 0; border-bottom: 1px solid var(--border); }
+header.site .wrap { display: flex; align-items: center; justify-content: space-between; }
+.brand { font-weight: 700; font-size: 17px; color: var(--fg); text-decoration: none; }
+.brand span { color: var(--amber); }
+nav a { color: var(--muted); text-decoration: none; font-size: 14px; margin-left: 20px; }
+nav a:hover { color: var(--fg); }
+main { padding: 56px 0 80px; }
+h1 { font-size: 32px; line-height: 1.2; margin-bottom: 16px; letter-spacing: -0.5px; }
+h2 { font-size: 20px; margin: 40px 0 12px; letter-spacing: -0.3px; }
+h3 { font-size: 16px; margin: 24px 0 8px; }
+p, li { color: var(--muted); font-size: 16px; }
+p { margin-bottom: 14px; }
+p strong, li strong { color: var(--fg); font-weight: 600; }
+ul { margin: 0 0 14px 22px; }
+li { margin-bottom: 6px; }
+a { color: var(--accent); }
+.lede { font-size: 19px; color: var(--fg); }
+.tag { display: inline-block; font-size: 12px; font-weight: 600; text-transform: uppercase;
+  letter-spacing: 1.2px; color: var(--amber); margin-bottom: 12px; }
+.card { background: var(--card); border: 1px solid var(--border); border-radius: 16px;
+  padding: 24px; margin: 24px 0; }
+.appicon { width: 88px; height: 88px; border-radius: 20px; display: block; margin-bottom: 20px; }
+.btn { display: inline-block; background: var(--amber); color: #05080F; font-weight: 600;
+  font-size: 15px; padding: 10px 20px; border-radius: 10px; text-decoration: none; }
+.btn.soon { background: var(--card); color: var(--muted); border: 1px solid var(--border);
+  cursor: default; }
+footer.site { border-top: 1px solid var(--border); padding: 28px 0 48px; }
+footer.site p { font-size: 13px; margin: 0; }
+footer.site a { color: var(--muted); }
+.small { font-size: 13px; }
